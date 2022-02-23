@@ -1,0 +1,118 @@
+.section-team {
+    // background-color: #F5F4FA;
+    width: 100%;    
+}
+.title-team {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+.section-team__team-list{
+   
+    @media screen and (min-width: 768px) {
+      width: 738px;
+      display: flex;
+      flex-wrap: wrap;
+      padding-left: 15px; }
+      @media screen and (min-width: 768px){
+          flex-wrap: nowrap;
+           display: flex;
+      }
+      @media screen and (min-width: 1200px) {
+      display: flex;
+         }
+ 
+}
+
+.team-item{
+    margin-bottom: 30px;
+     background: var(--main-color-);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+      @media screen and (min-width: 768px) {
+      width: 750px;
+          width: calc( 100% / 2 - 30px)}
+       @media screen and (min-width: 1200px) {
+      width: 1200px;
+         }
+    
+}   
+.team-item:not( last-child){
+    margin-right: 30px;
+}
+
+
+.team-member-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 0.8;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 10px;
+    
+}
+.section-team__team-text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.03em;
+   
+}
+
+.box-item{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section-team__list-icon-team{
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+}
+
+.section-team__team-icon{
+width: 20px;
+height: 20px;
+fill:#afb1b8;
+justify-content: center;
+display: flex;
+transition: fill 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.section-team__team-link{
+    width: 44px;   
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
+    &:hover,
+    &:focus{
+     background-color:var(--main-color-blue-);}
+ &:hover .section-team__team-icon,
+ &:focus .section-team__team-icon{
+      fill: var(--main-color-);
+    border-color: var(--main-color-blue-);
+ }
+}
+
+
+
+
+.section-team__team-list-icon + .section-team__team-list-icon{
+    margin-left: 10px;
+}
+
+.section-team__team-link:focus .team-icon{
+    fill: var(--main-color-);
+    border-color: var(--main-color-blue-);
+    transition: color 250ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}

@@ -1,0 +1,72 @@
+
+button{
+    cursor: pointer;
+    border: 0;
+}
+
+:root{
+    --main-color-: white;
+    --main-color-Brown-: #757575 ;
+    --main-color-blue-: #2196F3;
+    --main-color-black: #212121;
+}
+
+.undefined{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.logo-color{
+    color: var(--main-color-);
+}
+
+.is-hidden{
+visibility: hidden;
+opacity: 0;
+pointer-events: none;
+}
+
+.hiden{
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+
+.section{
+      padding-bottom: 94px;
+      padding-top: 94px;
+}
+.container{
+     width: 100%;
+    //  padding-left: 30px;
+     margin: 0 auto;
+  @media screen and (min-width: 480px) {
+      width: 450px;
+  }
+
+  @media screen and (min-width: 768px) {
+        width: 750px;
+  }
+  @media screen and (min-width: 1200px) {
+         width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;}
+}
+
