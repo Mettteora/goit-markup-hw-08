@@ -1,17 +1,42 @@
 
 .hero-title {
+  font-family: 'Roboto';
+font-style: normal;
 font-weight: 900;
-font-size: 44px;
-line-height: 1.36;
+
+line-height: 1.62;
+/* or 162% */
+
 text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
-color: var(--main-color-);
-margin-bottom: 30px;
+padding-top: 118px;
+padding-left: 60px;
+padding-right: 60px;
+color: #FFFFFF;
+      @media screen and (min-width: 768px){
+font-style: normal;
+font-size: 26px;
+line-height: 1.62;
+text-align: center;
+padding-left: 204px;
+
+}
+// font-weight: 900;
+// font-size: 44px;
+// line-height: 1.36;
+// text-align: center;
+// letter-spacing: 0.06em;
+// text-transform: uppercase;
+// color: var(--main-color-);
+// margin-bottom: 30px;
 
 }
 
 .section-hero__btn {
+   @media screen and (min-width: 1200px){
+
+   }
     font-family: inherit;
     font-weight: 700;
     width: 200px;
@@ -25,9 +50,32 @@ margin-bottom: 30px;
     border-radius: 4px;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-left: 140px;
+    @media screen and (min-width: 768px){
+      margin-left: 359px;
+    }
+    
 }
 
 .section-hero {
+ width: 480px;
+ height: 400px;
+background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/backgound480.jpg);
+    @media screen and (min-width: 768px){
+      width: 768px;
+      height: 400px;
+      background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)),
+    url(../images/backgound768.jpg);
+    }
+  @media screen and (min-width: 1200px){
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -41,4 +89,6 @@ margin-bottom: 30px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+   
 }
