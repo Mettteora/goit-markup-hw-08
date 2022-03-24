@@ -596,6 +596,7 @@ button {
 .clients-item {
   width: 170px;
   height: 92px;
+  margin-left: 15px;
 }
 
 .section-clients__title-clients {
@@ -611,10 +612,7 @@ button {
   margin-bottom: 30px;
 }
 
-.clients-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
+
 
 .section-clients__clients-link {
   border: 1px solid #AFB1B8;
