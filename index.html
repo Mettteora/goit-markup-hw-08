@@ -22,9 +22,10 @@
         <div class="container">
             <div class="container-header">
                 <a href="" class="header__logo">Web<span class="color-logo">Studio</span></a>
-                <svg class="header-menu">
-                    <use href="./images/icons.svg#icon-menu"></use>
-                </svg>
+                <button type="button" class="btn-menu"><svg class="header-menu">
+                        <use href="/images/icons.svg#icon-cross"></use>
+                        <use href="./images/icons.svg#icon-menu"></use>
+                    </svg></button>
                 <nav class="header-nav">
                     <ul class="header__list">
                         <li class="header__item"><a href="./index.html" class="header-link current">Студия</a></li>
@@ -51,12 +52,12 @@
     </header>
 
     <main>
-        <!-- <section class="section-hero">
+        <section class="section-hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
                 <button type="button" class="section-hero__btn" data-modal-open>Заказать услугу</button>
             </div>
-        </section> -->
+        </section>
         <!-- <section class="section">
             <div class="container">
                 <h2 class="undefined">Наше преимущество</h2>
@@ -386,6 +387,7 @@
             </div>
         </div>
         <script src="./js/modal.js"></script>
+        <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

@@ -22,21 +22,22 @@ text-align: center;
 padding-left: 204px;
 
 }
-// font-weight: 900;
-// font-size: 44px;
-// line-height: 1.36;
-// text-align: center;
-// letter-spacing: 0.06em;
-// text-transform: uppercase;
-// color: var(--main-color-);
-// margin-bottom: 30px;
+ @media screen and (min-width: 1200px){
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--main-color-);
+margin-bottom: 30px;
+ }
+
 
 }
 
 .section-hero__btn {
-   @media screen and (min-width: 1200px){
-
-   }
+   
     font-family: inherit;
     font-weight: 700;
     width: 200px;
@@ -57,11 +58,14 @@ padding-left: 204px;
     @media screen and (min-width: 768px){
       margin-left: 359px;
     }
-    
+    @media screen and (min-width: 1200px){
+    margin-left: 0px;
+   }
 }
 
 .section-hero {
- width: 480px;
+ min-width: 480px;
+ background-repeat: repeat-x;
  height: 400px;
 background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
@@ -76,7 +80,9 @@ background-image: linear-gradient(
     url(../images/backgound768.jpg);
     }
   @media screen and (min-width: 1200px){
-    max-width: 1600px;
+    width: 1600px;
+    height: 600px;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     background: #2F303A;
