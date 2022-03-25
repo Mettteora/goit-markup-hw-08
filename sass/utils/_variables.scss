@@ -40,7 +40,13 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .section--no-padding-top{
-    padding: 0;
+    @media screen and (max-width: 1199px){
+            display: none;
+    }
+    @media screen and (min-width: 1200px){
+        padding: 0;
+    }
+    
 }
 
 .section--other-background{

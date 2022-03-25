@@ -38,8 +38,15 @@ p, h1, h2, h3, h4, h5, h6 {
   list-style: none;
 }
 
-.section--no-padding-top {
-  padding: 0;
+@media screen and (max-width: 1199px) {
+  .section--no-padding-top {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section--no-padding-top {
+    padding: 0;
+  }
 }
 
 .section--other-background {
@@ -124,11 +131,23 @@ button {
   }
 }
 
-.header {
-  background: #FFFFFF;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid #ECECEC;
+@media screen and (min-width: 480px) {
+  .header {
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    background: #FFFFFF;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #ECECEC;
+  }
 }
 
 .current {
@@ -143,7 +162,7 @@ button {
     position: absolute;
     border-radius: 2px;
     left: 0;
-    bottom: -43px;
+    bottom: -18px;
     background-color: var(--main-color-blue-);
   }
 }
@@ -164,14 +183,21 @@ button {
   color: black;
 }
 
-.container-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 480px;
+@media screen and (min-width: 480px) {
+  .container-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-header {
+    width: 768px;
+  }
 }
 
 .header__logo {
@@ -232,8 +258,12 @@ button {
 }
 @media screen and (min-width: 1200px) {
   .header__li {
-    margin-bottom: -59px;
+    margin-bottom: 0px;
   }
+}
+
+.header__li:not(:last-child) {
+  margin-right: 50px;
 }
 
 @media screen and (max-width: 768px) {
@@ -287,9 +317,6 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    margin-left: auto;
     margin-left: 305px;
   }
 }
@@ -376,6 +403,15 @@ button {
   display: -ms-inline-flexbox;
   display: inline-flex;
 }
+@media screen and (min-width: 768px) {
+  .btn-menu {
+    display: none;
+  }
+}
+
+.btn-menu .icon-cross {
+  display: none;
+}
 
 .hero-title {
   font-family: "Roboto";
@@ -457,7 +493,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .section-hero {
-    width: 768px;
+    min-width: 768px;
     height: 400px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgound768.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgound768.jpg);
@@ -471,7 +507,7 @@ button {
     margin-left: auto;
     margin-right: auto;
     background: #2F303A;
-    padding: 200px 0;
+    padding: 100px 0;
     text-align: center;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/backgound.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/backgound.jpg);
@@ -653,8 +689,9 @@ button {
 }
 @media screen and (min-width: 768px) {
   .team-item {
-    width: 750px;
-    width: calc(50% - 30px);
+    width: calc((100% - 30px) / 2);
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 1200px) {
