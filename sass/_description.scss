@@ -1,29 +1,57 @@
 .description-section__list {
     display: flex;
-    flex-wrap: wrap;
+    
     width: auto;
     margin: 30px;
+    @media screen and (max-width: 1199px){
+    flex-wrap: wrap;
+    }
+    @media screen and (max-width: 1200px){
+     margin-left: 100px;
+    }
     
 }
 
 .description-section__icon-box{
-    width: 65px;
+    @media screen and (max-width: 1199px){
+        margin-bottom: 30px;
+        margin-left: 100px;
+    }
+    width: 70px;
     height: 70px;
-    margin-bottom: 30px;
+    
     display: flex;
-    margin-left: 100px;
+    
     padding: 10px;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 1200px){
+     
+
+    }
 }
 .description-box{
     background-color: #F5F4FA;
+    @media screen and (min-width: 1200px){
+        width: 270px;
+        height: 120px;
+        margin-bottom: 30px;
+        background-color: #F5F4FA;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .description-section__item{
     @media screen and (min-width: 768px){
-width: calc((100% - 2 * 30px) / 2);
-margin-right: 30px;
+        width: calc((100% - 2 * 30px) / 2);
+        margin-right: 30px;
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 270px;
+        flex-wrap: nowrap;
     }
     
 }
@@ -33,13 +61,7 @@ margin-right: 30px;
 }
 
 .description-section__title {
-    // font-weight: 700;
-    // font-size: 14px;
-    // line-height: 1.71;
-    // letter-spacing: 0.03em;
-    // text-transform: uppercase;
-    // color: #212121;
-    // margin-bottom: 10px;
+   
     font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -50,14 +72,19 @@ letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #212121;
 margin-bottom: 10px;
+@media screen and (min-width: 1200px){
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #212121;
+    margin-bottom: 10px;
+}
 }
 
 .description-section__text {
-    // font-weight: normal;
-    // font-size: 14px;
-    // line-height: 1.71;
-    // letter-spacing: 0.03em;
-    // width: 270px;
+   
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
@@ -65,4 +92,11 @@ font-size: 11px;
 line-height: 1.71;
 letter-spacing: 0.03em;
 color: #757575;
+@media screen and (min-width: 1200px){
+ font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    width: 270px;
+}
 }

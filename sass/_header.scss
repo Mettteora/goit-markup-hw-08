@@ -60,6 +60,9 @@ color: black;
 @media screen and (min-width: 768px){
     width: 768px;
 }
+@media screen and (min-width: 1200px){
+    width: 1200px;
+}
 }
 
 .header__logo {
@@ -89,14 +92,12 @@ color: black;
     }
      @media screen and (min-width: 1200px){
      font-family: 'Roboto';
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
-
-color: #212121;
-        
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: #212121;
      }
 
 }
@@ -139,7 +140,8 @@ margin-right: 50px;
         margin-right: 50px;  
     }
     @media screen and (min-width: 1200px){
-        margin-right: auto;
+        margin-right: 0;
+        
     }
     
 }
