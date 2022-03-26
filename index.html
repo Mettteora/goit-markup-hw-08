@@ -22,11 +22,13 @@
         <div class="container">
             <div class="container-header">
                 <a href="" class="header__logo">Web<span class="color-logo">Studio</span></a>
-                <button type="button" class="btn-menu"><svg class="header-menu"
+                <button type="button" class="menu-button is-open" data-menu-button=""><svg class="header-menu"
                         aria-label="Переключатель мобильного меню">
-                        <use href="/images/icons.svg#icon-cross" class="icon-cross"></use>
+
+                        <!-- <use href="/images/icons.svg#icon-cross" class="icon-cross"></use> -->
                         <use href="./images/icons.svg#icon-menu" class="icon-menu"></use>
                     </svg></button>
+
                 <nav class="header-nav">
                     <ul class="header__list">
                         <li class="header__item"><a href="./index.html" class="header-link current">Студия</a></li>
@@ -48,6 +50,28 @@
                     </li>
                 </ul>
 
+            </div>
+        </div>
+        <div class="menu-container is-hidden" id="menu-container" data-menu>
+            <button class="button-close"><svg class="header-icon">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                </svg></button>
+            <div class="menu-navigation">
+                <a href="./index.html" class="menu-link">Студия</a>
+                <a href="./portfolio.html" class="menu-link">Портфолио</a>
+                <a href="" class="menu-link">Контакты</a>
+            </div>
+            <div class="contacts">
+                <a href="mailto:info@devstudio.com" class="menu-contatcs">info@devstudio.com</a>
+                <a href="tel:+380961111111" class="menu-contatcs">+38 096 111 11 11</a>
+            </div>
+            <div class="social-block">
+                <ul class="mobile-social-list">
+                    <li class="mobile-social-item"><a href="" class="mobile-social-link">Instagram</a></li>
+                    <li class="mobile-social-item"><a href="" class="mobile-social-link">Twitter</a></li>
+                    <li class="mobile-social-item"><a href="" class="mobile-social-link">Facebook</a></li>
+                    <li class="mobile-social-item"><a href="" class="mobile-social-link">LinkedIn</a></li>
+                </ul>
             </div>
         </div>
     </header>
@@ -380,9 +404,6 @@
                             договора</a></label>
                     <button type="submit" class="btn-modal">Отправить</button>
                 </div>
-
-
-
             </form>
         </div>
     </div>

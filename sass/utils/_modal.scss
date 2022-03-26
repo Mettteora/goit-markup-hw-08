@@ -8,6 +8,9 @@
 }
 
 .modal{
+    @media screen and (min-width: 480px){
+        width: 400px;
+    }
 width: 528px;
 min-height: 581px;
 background-color: #FFFFFF;
@@ -140,6 +143,9 @@ color: #212121;
 }
 
 .user-text{
+    @media screen and (max-width: 768px){
+    width: auto;
+    }
     display: block;
     width: 448px;
     height: 120px;

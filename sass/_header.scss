@@ -2,6 +2,7 @@
 .header {
     @media screen and (min-width: 480px){
         max-width: 480px;
+        // position: relative;
     }
     @media screen and (min-width: 768px){
         max-width: 768px;
@@ -55,6 +56,7 @@ color: black;
     display: flex;
     align-items: center;
     width: 480px;
+    
     }
 
 @media screen and (min-width: 768px){
@@ -188,8 +190,8 @@ margin-right: 50px;
 }
 
 .header-icon{
-    width: 16px;
-    height: 12px;
+    width: 20px;
+    height: 20px;
     margin-right: 10px;   
     justify-content: center;
     align-items: center;
@@ -197,7 +199,8 @@ margin-right: 50px;
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: #2196F3;
+    fill: black;
+    background-color: #FFFFFF;
     }
 }
 
@@ -225,6 +228,10 @@ margin-right: 50px;
     height: 16px;
     // position: absolute;
     // margin-left: 400px;
+
+@media screen and (min-width: 480px){
+    width: auto;
+}
     &:hover,
      &:focus{
             fill: #2196F3;
@@ -234,10 +241,12 @@ margin-right: 50px;
     }
 }
 
-.btn-menu{
+.menu-button{
     background-color: #FFFFFF;
-    margin-left: 40%;
-    padding: 0;
+    // margin-left: 40%;
+    // padding: 0;
+    display: block;
+    margin-left: auto;
     border: none;
     display: inline-flex;
     @media screen and (min-width: 768px){
@@ -245,6 +254,14 @@ margin-right: 50px;
     }
 }
 
-.btn-menu .icon-cross{
+.menu-button .icon-cross{
     display: none;
+}
+
+.menu-button.is-open .icon-cross{
+    display: block;
+}
+
+.menu-button.is-open .icon-menu{
+    
 }

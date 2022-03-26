@@ -2,7 +2,13 @@ body{
     font-family: 'Roboto', sans-serif;
     color: #757575 ;
     margin: 0;
-    fill: #757575
+    fill: #757575;
+    @media screen and (min-width: 480px){
+         position: relative;
+    }
+    @media screen and (min-width: 768px){
+        position: static;
+    }
     
 }
 

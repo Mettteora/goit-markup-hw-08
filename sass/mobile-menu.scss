@@ -1,0 +1,85 @@
+.menu-container {
+    // display: none;
+    // position: absolute;
+    width: 100vw;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    // width: 480px;
+    height: 400vw;
+    background-color: white;
+}
+.menu-navigation {
+    display: flex;
+    flex-direction: column;
+    margin-top: 48px;
+    
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #212121;
+    margin-left: 40px;
+    margin-bottom: 32px;
+    &:hover,
+    &:focus{
+          color:var(--main-color-blue-);
+      }
+}
+
+.menu-contatcs{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    margin-left: 40px;
+    
+    color: #757575;
+    &:hover,
+    &:focus{
+          color:var(--main-color-blue-);
+      }
+}
+
+.menu-contatcs:not( :last-child){
+    margin-top: 302px;
+    margin-bottom: 32px;
+}
+
+.social-block{
+    margin-top: 64px;
+}
+.mobile-social-list{
+    display: flex;
+    margin-left: 40px;
+    
+}
+
+.mobile-social-item {
+    color: var(--main-color-blue-);
+    &:not( :last-child){
+     margin-right: 20px;
+    }
+}
+.mobile-social-link {
+}
+
+.button-close{
+            right: 10%;
+        top: 1%;
+        position: absolute;
+        background-color: white;
+        fill: #212121;
+}
