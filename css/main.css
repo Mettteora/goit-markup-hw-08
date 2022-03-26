@@ -166,7 +166,7 @@ button {
   position: relative;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .current::after {
     content: "";
     width: 100%;
@@ -186,7 +186,7 @@ button {
     position: absolute;
     border-radius: 2px;
     left: 0;
-    bottom: -53px;
+    bottom: -32px;
     background-color: var(--main-color-blue-);
   }
 }
@@ -232,6 +232,11 @@ button {
           align-items: center;
   display: inline-block;
   margin-right: 93px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header__logo {
+    padding-left: 15px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -310,7 +315,7 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .header__list-link {
     font-weight: 500;
     font-size: 14px;
@@ -323,6 +328,7 @@ button {
         flex-wrap: wrap;
     margin-left: auto;
     margin-left: 84px;
+    padding-top: 21px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1280,7 +1286,7 @@ button {
     margin-bottom: 15px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    width: 362px;
+    padding-left: 15px;
   }
 }
 
@@ -1336,6 +1342,11 @@ button {
   margin-right: -30px;
   margin-bottom: -30px;
 }
+@media screen and (max-width: 767px) {
+  .gallary__list {
+    display: block;
+  }
+}
 
 .gallary__wrap {
   position: relative;
@@ -1377,6 +1388,13 @@ button {
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: #FFFFFF;
+}
+@media screen and (max-width: 1199px) {
+  .gallary-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 354px;
+  }
 }
 
 .gallary__link {
