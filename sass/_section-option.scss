@@ -1,9 +1,19 @@
 .option-list {
+    @media screen and (max-width: 767px){
+        margin-bottom: 15px;
+        flex-wrap: wrap;
+        width: 362px;
+        
+    }
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
 }
 .portfolio__option-item{
+    @media screen and (max-width: 767px){
+            margin-bottom: 15px;
+            margin-right: 4px;
+    }
     background: #F5F4FA;
     border-radius: 4px;
    

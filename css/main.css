@@ -4,9 +4,10 @@ body {
   margin: 0;
   fill: #757575;
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   body {
     position: relative;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -142,12 +143,12 @@ button {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .header {
     max-width: 480px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1199px) {
   .header {
     max-width: 768px;
   }
@@ -1274,10 +1275,24 @@ button {
           justify-content: center;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 767px) {
+  .option-list {
+    margin-bottom: 15px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 362px;
+  }
+}
 
 .portfolio__option-item {
   background: #F5F4FA;
   border-radius: 4px;
+}
+@media screen and (max-width: 767px) {
+  .portfolio__option-item {
+    margin-bottom: 15px;
+    margin-right: 4px;
+  }
 }
 
 .option-item:not(:last-child) {
