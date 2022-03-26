@@ -1434,7 +1434,7 @@ button {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 767px) {
   .modal {
     width: 400px;
   }
