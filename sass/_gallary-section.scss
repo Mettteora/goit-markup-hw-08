@@ -75,6 +75,9 @@ letter-spacing: 0.03em;
 }
 
 .address{
+    @media screen and (max-width: 767px){
+       margin-top: 20px;
+    }
     font-style: normal;
 }
 
