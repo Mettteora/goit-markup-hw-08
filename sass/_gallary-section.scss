@@ -103,10 +103,14 @@ letter-spacing: 0.03em;
     color: var(--main-color-);
 }
 
-// .clinets-box{
-//     width: 1170px;
-//     height: 184px;
-// }
+.clinets-box{
+    @media screen and (min-width: 1200px){
+        width: 1170px;
+        height: 184px;
+        margin-bottom: 94px;
+    }
+    
+}
 
 
 .box-div{

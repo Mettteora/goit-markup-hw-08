@@ -916,11 +916,10 @@ button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-top: 50px;
+    margin-bottom: 100px;
   }
 }
 
@@ -940,6 +939,7 @@ button {
 @media screen and (min-width: 1200px) {
   .clients-item {
     width: 170px;
+    height: 92px;
   }
 }
 
@@ -1013,7 +1013,7 @@ button {
 }
 
 .foter-box {
-  margin-left: 40px;
+  margin-left: 50px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .foter-box {
@@ -1094,6 +1094,11 @@ button {
   letter-spacing: 0.03em;
   padding-left: 16px;
   color: rgba(255, 255, 255, 0.6);
+}
+@media screen and (max-width: 767px) {
+  .sub-input {
+    width: 90%;
+  }
 }
 .sub-btn {
   width: 200px;
@@ -1313,6 +1318,10 @@ button {
   }
 }
 
+.footer__div {
+  margin-left: 50px;
+}
+
 .option-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1487,6 +1496,14 @@ button {
 
 .address-link {
   color: var(--main-color-);
+}
+
+@media screen and (min-width: 1200px) {
+  .clinets-box {
+    width: 1170px;
+    height: 184px;
+    margin-bottom: 94px;
+  }
 }
 
 .box-div {
