@@ -1,12 +1,13 @@
 .option-list {
     @media screen and (max-width: 767px){
-        margin-bottom: 15px;
-        flex-wrap: wrap;
-        padding-left: 15px;
+        margin-bottom: 30px;
+        flex-wrap: wrap; 
     }
     display: flex;
-    justify-content: center;
     margin-bottom: 50px;
+    @media screen and (min-width: 1200px){
+        margin-left: 250px;
+    }
 }
 .portfolio__option-item{
     @media screen and (max-width: 767px){
@@ -15,7 +16,10 @@
     }
     background: #F5F4FA;
     border-radius: 4px;
-   
+    margin-right: 10px;
+   @media screen and (min-width: 1200px){
+    justify-content: center;
+   }
 }
 
 .option-item:not( :last-child){

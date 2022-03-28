@@ -7,9 +7,13 @@ padding-top: 60px;
 background-color:#2F303A;
 }
 
-// .foter-box {
-//     margin-left: 70px;
-// }
+.foter-box {
+    // margin-left: 70px;
+    margin-left: 40px;
+    @media screen and (min-width: 768px) and (max-width:1199px){
+        margin-left: 70px;
+    }
+}
 .footer__item:not( :last-child){
     margin-right: 10px;
 }
@@ -53,9 +57,8 @@ background-color:#2F303A;
 }
 
 .sub-input {
-    @media screen and (max-width: 767px){
-       width: 450px;
-       height: 50px;
+    @media screen and (min-width: 767px) and (max-width:1199px){
+       
     }
     width: 358px;
     height: 50px;
@@ -87,12 +90,22 @@ background-color:#2F303A;
      display: inline-flex;
      justify-content: center;
      margin-left: 12px;
+     @media screen and (min-width: 768px) and (max-width:1199px){
+         margin-left: 59px;
+     }
+     @media screen and (min-width: 768px){
+         margin-top: 20px;
+
+     }
      @media screen and (max-width: 767px){
          margin-top: 20px;
      }
 }
 
 .sub-box{
+    @media screen and (min-width: 320px) and (max-width: 768px){
+        margin-left: -50px;
+    }
     @media screen and (max-width: 767px){
         margin-left: 0;
         max-width: 767px;
@@ -153,12 +166,19 @@ margin-bottom: 9px;
 }
 
 .footer-flex{
-    @media screen and (max-width: 767px){
-        display: block;
-        margin-left: 30%;
+    @media screen and (min-width: 767px) and (max-width:1199px) {
+         display: block;
     }
-    display: flex;
+    @media screen and (max-width: 767px){
+        margin-left: 76px;
+        
+    }
+    @media screen and (min-width: 768px){
+      display: block;
+      display: flex;
     align-items: baseline;
+    }
+    
 }
 
 .footer__logo{
@@ -224,6 +244,7 @@ color: #FFFFFF;
     justify-content: center;
     align-items: center;
     color: #FFFFFF;
+    margin-bottom: 20px;
     @media screen and (max-width: 767px){
         margin-bottom: 20px;
     }

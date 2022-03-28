@@ -50,24 +50,31 @@ display: none;
 
 
 .section{
+    @media screen and (max-width: 1199px){
+      padding-bottom: 60px;
+      padding-top: 60px;
+    }
       padding-bottom: 94px;
       padding-top: 94px;
 }
 .container{
-     width: 100%;
+     
     //  padding-left: 30px;
      margin: 0 auto;
+     padding: 0 15px;
   @media screen and (min-width: 480px) {
       width: 480px;
   }
 
   @media screen and (min-width: 768px) {
         width: 768px;
+        margin:  auto;
+        padding: 0 15px;
   }
   @media screen and (min-width: 1200px) {
          width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;}
+        padding-left: 15px;
+        padding-right: 15px;
+        margin: 0 auto;}
 }
 
